@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>entrega certa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="styleEmp.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <nav>
+          <a href="homeMotoboy.html">
+            <img src="img/logo entrega certa.jpeg" alt="logo entrega certa">
+          </a>
+        </nav>
+      </div>
+
+      <div class="barra-pesquisa">
+        <input type="text" placeholder="Pesquisar">
+        <button>Buscar</button>
+      </div>
+
+      <div class="imagem-direita">
+        <img src="img/perfil.png" alt="Imagem Flutuante">
+      </div>
+    </nav>
+  </header>
+  <div class="conteiner-perfil">
+    <img class="imagem-perfil" src="img/emblema de vetor de pizzaria no quadro-negro_ modelo de logotipo de pizza.jpg"
+      alt="Foto de Perfil">
+    <div class="detalhes-perfil">
+      <div class="nome-perfil">Pizzaria Corleone </div>
+      <div class="profile-rating">
+        <div class="star-icon" onclick="rateProfile(1)">★</div>
+        <div class="star-icon" onclick="rateProfile(2)">★</div>
+        <div class="star-icon" onclick="rateProfile(3)">★</div>
+        <div class="star-icon" onclick="rateProfile(4)">★</div>
+        <div class="star-icon" onclick="rateProfile(5)">★</div>
+      </div>
+      <div class="biografia-usuario">Biografia da empresa.</div>
+      <a class="link-rede-social" href="link-para-rede-social">Rede Social </a>
+      <a class="link-rede-social" href="link-para-rede-social">Visite o site</a>
+    </div>
+    <img class="edit-icon" src="img/pencil.svg" alt="Editar" onclick="openEditModal()">
+  </div>
+  <div class="edit-modal" id="editModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeEditModal()">&times;</span>
+      <h2>Editar Perfil</h2>
+      <input type="text" id="firstNameInput" class="edit-input" placeholder="Nome">
+
+      <textarea id="biographyTextArea" class="edit-input" rows="4" placeholder="Biografia"></textarea>
+      <button onclick="saveProfileInfo()">Salvar</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </button>
+  </div>
+  </div>
+  <div class="conteiner-informações">
+    <h2><b>Sobre</b></h2>
+    <p>Somos uma pizzaria tradicional italiana.<br>Fundada por imigrantes italianos vindos da Sicília somos especialiatas na pizza siciliana, e ja estamos na 4º geração da familia trazendo a melhor pizza para você. </p>
+  </div>
+  <div class="conteiner-informações">
+    <h2><b>Vagas ofertadas</b></h2>
+
+    <div class="oferta">
+      <h3 class="vaga">Motoboy</h3>
+      <p class="localização">Localização: Endereço do estabelecimento.</p>
+      <div class="descrição">
+        <p>Estamos procurando um motoboy com experiência. A vaga é efetiva</p>
+        <p>Requisitos: Experiência no ramo e pontual.</p>
+      </div>
+    </div>
+
+
+    <div class="oferta">
+      <h3 class="vaga">Motoboy</h3>
+      <p class="localização">Localização: Endereço do estabelecimento.</p>
+      <div class="descrição">
+        <p>Estamos procurando um motoboy para meio período .</p>
+        <p>Requisitos: Pontual e disponibilidade de horário.</p>
+      </div>
+    </div>
+    </p>
+  </div>
+  <div class="conteiner-informações">
+    <h2><b>Avaliações dos motoboys</b></h2>
+
+    <div class="classificação-média">
+      Avaliação Média: 5 / 5 estrelas
+    </div>
+
+    <div class="análise">
+      <h3>Avaliação de <span class="nome-usuario">Usuário123</span></h3>
+      <div class="avaliação">Classificação: 5/5 estrelas</div>
+      <div class="comentário">
+        <p>A empresa é ótima para se trabalhar.</p>
+      </div>
+    </div>
+
+    <div class="análise">
+      <h3>Avaliação de <span class="nome-usuario">Avaliador456</span></h3>
+      <div class="avaliação">Classificação: 5/5 estrelas</div>
+      <div class="comentário">
+        <p>Ótima empresa! .</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conteiner-informações">
+    <h2><b>Informações de contato.</b></h2>
+    <p>Email: empresa.exemplo@servidor.com</p>
+  </div>
+
+  <div class="conteiner-informações">
+    <h2><b>Endereço.</b></h2>
+    <p>Estado: Nome do estado.<br>Cidade: Nome da cidade.<br>Rua: Nome da rua.<br>Número: 123</p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="javaEmp.js"></script>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Contato</h3>
+        <p>Endereço: Rua Exemplo, 123</p>
+        <p>Email: contato@exemplo.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="#">Página Inicial</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</html>

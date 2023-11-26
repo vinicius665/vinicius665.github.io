@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-br"> </html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>entrega certa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="homeMotoboy.html">
+            <img src="img/logoAmarelo.jpg" alt="logo entrega certa">
+            </a>
+          </div>
+  
+          <div class="barra-pesquisa">
+            <input type="text" placeholder="Pesquisar">
+            <button>Buscar</button>
+          </div>
+  
+          <div class="imagem-direita">
+            <img src="img/perfil.png" alt="Imagem Flutuante">
+          </div>
+         </nav>
+      </header>
+    <div class="conteiner-perfil">
+        <img class="imagem-perfil" src="img/motoboy2.webp" alt="Foto de Perfil">
+        <div class="detalhes-perfil">
+            <div class="nome-perfil">Gustavo Henrique</div>
+            <div class="profile-rating">
+                <div class="star-icon" onclick="rateProfile(1)">★</div>
+                <div class="star-icon" onclick="rateProfile(2)">★</div>
+                <div class="star-icon" onclick="rateProfile(3)">★</div>
+                <div class="star-icon" onclick="rateProfile(4)">★</div>
+                <div class="star-icon" onclick="rateProfile(5)">★</div>
+            </div>
+            <div class="biografia-usuario">Biografia do usuário.</div>
+            <a class="link-rede-social" href="link-para-rede-social">Rede Social 1</a>
+            <a class="link-rede-social" href="link-para-rede-social">Rede Social 2</a>
+        </div>
+        <img class="edit-icon" src="img/pencil.svg" alt="Editar" onclick="openEditModal()">
+    </div>
+    <div class="edit-modal" id="editModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeEditModal()">&times;</span>
+            <h2>Editar Perfil</h2>
+            <input type="text" id="firstNameInput" class="edit-input" placeholder="Nome">
+            <input type="text" id="lastNameInput" class="edit-input" placeholder="Sobrenome">
+            <textarea id="biographyTextArea" class="edit-input" rows="4" placeholder="Biografia"></textarea>
+            <button onclick="saveProfileInfo()">Salvar</button>
+        </div> 
+    </div>
+    <div class="carrossel-de-empresas">
+        <h2><b>Empresas cadastradas em nosso site</b></h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="">
+              <div class="logoEmpresa">
+                <img src="img/empresa 1.jpg" class="d-block w-30" alt="..." width="150px">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/empresa 2.jpg" class="d-block w-30" alt="..." width="150px">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="" class="d-block w-30" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Informações da empresa</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>  
+      </div>
+    <div class="historico-entregas">
+        <h2><b>Histórico de entregas</b></h2>
+        <p>Total de entregas: <span id="total-entregas">221</span></p>
+        <p>Última entrega realizada: <span id="ultima-entrega">15/10/2023</span></p>
+    </div>
+    <div class="conteiner-informação">
+      <h2><b>Experiência profissional</b></h2> 
+     <p><b>Empresa:</b> IFOOD<br>
+        <b>Cargo:</b> ENTREGADOR<br>
+        <b>Período:</b> 2015 - 2016<br>
+        <b>Informações complementares:</b><br> Entregador destaque no período contratado.<br></p>
+    </div>
+
+    <div class="conteiner-informação">
+        <h2><b>Formação acadêmica</b></h2> 
+       <p><b>Instituição de ensino:</b> Nome da instituição<br>
+          <b>Diploma:</b> Nível de ensino<br>
+          <b>Período:</b> 2012 - 2015<br>
+          <b>Informações complementares:</b><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Vero, quis. Quo vero doloremque possimus illum!</p> 
+      </div>
+
+      <div class="conteiner-informação">
+        <h2><b>CNH</b></h2>
+        <p>Após o cadastro, as informações serão geradas automaticamente nesse campo.</p>  
+      </div>
+
+      <div class="conteiner-informação">
+        <h2><b>Qualidades</b></h2>
+        <p>-Experiente.<br>-pontual.<br>-etc. </p>  
+      </div>
+
+      <div class="conteiner-informação">
+
+        <h2><b>Avaliação das empresas</b></h2>
+        <div class="classificação-média">
+          Avaliação Média: 5 / 5 estrelas
+      </div>
+
+      <div class="análise">
+          <h3>Avaliação de <span class="nome-usuario">Usuário123</span></h3>
+          <div class="avaliação">Classificação: 5/5 estrelas</div>
+          <div class="comentário">
+              <p>Ótimo motoboy.Muito experiente e pontual.</p>
+          </div>
+      </div>
+
+      <div class="análise">
+          <h3>Avaliação de <span class="nome-usuario">Avaliador456</span></h3>
+          <div class="avaliação">Classificação: 5/5 estrelas</div>
+          <div class="comentário">
+              <p>Ótima motoboy! .</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="conteiner-informação">
+        <h2><b>Contato</b></h2>
+        <p>Email: usuário.exemplo@servidor.com</p>  
+      </div>
+
+      
+      
+    
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+ <script src="java.js"></script>
+  </body>
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Contato</h3>
+                <p>Endereço: Rua Exemplo, 123</p>
+                <p>Email: contato@exemplo.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                </ul>
+            </div>
+          
+        </div>
+    </div>
+</footer>
+  </html>

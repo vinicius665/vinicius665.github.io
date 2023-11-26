@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffcc22;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px; 
+  }
+  
+  .imagem-direita img {
+    width: 60px; 
+    margin-left: 10px; 
+  }
+
+   /* barra de busca e botão */
+   .barra-pesquisa input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .barra-pesquisa button {
+    background-color: #0099CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.conteiner-perfil {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.imagem-perfil {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detalhes-perfil {
+    margin-left: 20px;
+}
+
+.nome-perfil {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-icon {
+    color: #FFD700; 
+    margin-right: 5px;
+}
+
+.biografia-usuario {
+    margin-top: 10px;
+}
+
+.link-rede-social {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* modal de edição do perfil */
+.edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.edit-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.carrossel-de-empresas h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.carrossel-de-empresas {
+    background-color: #808080;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.imgMotoboy{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+.conteiner-informações {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.conteiner-informações h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.classificação-média {
+    font-size: 20px;
+    color: #0074cc;
+}
+
+.análise {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.análise h3 {
+    font-size: 16px;
+}
+
+.análise .nome-usuario {
+    color: #0074cc;
+}
+
+.análise .avaliação {
+    color: #0074cc;
+}
+
+.análise .comentário {
+    margin-top: 10px;
+}
+
+.oferta {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.vaga {
+    font-size: 18px;
+}
+
+.localização {
+    color: #0074cc;
+}
+
+.descrição {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #ffcc22;
+    color: #000000;
+    padding: 20px 0;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+

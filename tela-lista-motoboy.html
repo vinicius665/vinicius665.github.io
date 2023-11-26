@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela lista de motoboys cadastrados</title>
+    <link rel="stylesheet" href="tela-lista-motoboy.css">
+    <script src="busca_motoboy.js"></script>
+
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="logo" href="/home.html"><img src="img/logoAmarelo.jpg" alt="logo" style="width: 70px;"></a>
+        </nav>
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <img src="img/search.png" id="btnBusca" alt="Buscar" style="width: 20px;" />
+        </div>
+        <a class="loginCadastrar" href="login.html">LOGIN</a>
+        <a class="loginCadastrar" href="login.html">CADASTRE-SE</a>
+    </header>
+
+</head>
+
+<body>
+    <section class="conteiner">
+        <img src="img/pexels-alex-green-5699475.jpg" alt="imagem da empresa" width="1200px"
+            height="300px">
+        <div class="corpo">
+            <h1>Área da empresa</h1>
+            <h2>Lista de entregadores cadastrados:</h2>
+        </div>
+    </section>
+
+    <main>
+        <div class="barra de pesquisa">
+            <input type="search" type="text" name="search" placeholder="pesquisar motoboy" id="searchInput">
+            <button type="button" onclick="pesquisarMotoboy()">
+                <p>Buscar</p>
+
+            </button>
+        </div>
+
+        <div class="motoboy-container">
+            <div class="motoboy" id="m1"> <img src="https://img.freepik.com/fotos-gratis/jovem-entregador-sorridente-vestindo-uniforme-com-bone-segurando-uma-sacola-de-comida-de-papel-olhando-para-o-telefone-na-mao_141793-121254.jpg?w=740&t=st=1700633849~exp=1700634449~hmac=bffbbb3e25aaf28780bec134a61695f4d4edff7f4ca58b4293a4d629a7dee963" width="150px"
+                    height="130px">
+                <p>motoboy 1 </p>
+                <p>Gustavo Henrique </p>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
+                   <button id="botaodadiv" type="button" class="loginCadastrar">
+                    <a href="perfilUsuario.html">
+                        <p>Ver mais</p>
+                    </a>
+                </button>
+            </div>
+            <div class="motoboy" id="m2"> <img src="https://img.freepik.com/fotos-gratis/entregador-de-comida-entregando-comida-em-scooter_1303-27695.jpg?w=740&t=st=1700634335~exp=1700634935~hmac=9243adf46a9fab3a43caa514b1d87bd61b6519f7b23bfde5311720314a52178c" width="150px"
+                    height="130px">
+                <p> motoboy 2</p>
+                <p>Jack Wilson</p>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
+                <button id="botaodadiv" type="button" class="loginCadastrar">
+                    <a href="perfilusuario2.html">
+                        <p>Ver mais</p>
+                    </a>
+                </button>
+            </div>
+            <div class="motoboy" id="m3"> <img src="https://img.freepik.com/fotos-gratis/retrato-de-jovem-africano-aceita-o-pedido-por-telefone-em-moto-segurando-caixas-com-pizza-e-sente-se-em-sua-bicicleta-lugar-urbano_496169-2169.jpg?w=740&t=st=1700634548~exp=1700635148~hmac=ead1d209f147396d726b2ed73f8e7fa75bd828f68138ede026983870f2bb3148" width="150px"
+                    height="130px">
+                <p>motoboy 3</p>
+                <p>Vilmar Assunção</p>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
+                <button id="botaodadiv" type="button" class="loginCadastrar">
+                    <a href="perfilusuario3.html">
+                        <p>Ver mais</p>
+                    </a>
+                </button>
+            </div>
+            <div class="motoboy" id="m4"> <img src="https://img.freepik.com/fotos-gratis/vista-frontal-jovem-correio-masculino-com-capa-uniforme-vermelha-segurando-o-pacote-de-comida-de-papel-no-fundo-rosa_140725-41098.jpg?w=740&t=st=1700634611~exp=1700635211~hmac=1da1a035b037a349033b4d3b7077f272bdcce6be983060ba99767945b83030ae" width="150px"
+                    height="130px">
+                <p>motoboy 4 </p>
+                <p>Anderson Silva</p>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
+                <button id="botaodadiv" type="button" class="loginCadastrar">
+                    <a href="perfilusuario4.html">
+                        <p>Ver mais</p>
+                    </a>
+                </button>
+            </div>
+            <div class="motoboy" id="m5"> <img src="https://img.freepik.com/fotos-gratis/entregador-de-comida-com-caixas-de-comida_1303-27723.jpg?w=740&t=st=1700635159~exp=1700635759~hmac=0946703f2b289d7587998c7776513611f685a77aefff294a7259899b6173d5f5" width="150px"
+                    height="130px">
+                <p>motoboy 5</p>
+                <p> Claudio Castro </p>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
+                <button id="botaodadiv" type="button" class="loginCadastrar">
+                    <a href="perfilusuario5.html">
+                        <p>Ver mais</p>
+                    </a>
+                </button>
+               
+            </div>
+            <div class="motoboy" id="m6">
+                <img src="https://img.freepik.com/fotos-gratis/retrato-do-close-up-de-um-motociclista-barbudo-brutal-no-capacete-e-oculos-de-sol-vestido-com-uma-jaqueta-de-couro-preta-sentado-em-uma-motocicleta-retro-com-farol-incluido_613910-18879.jpg?w=740&t=st=1700635211~exp=1700635811~hmac=871e5ea3d1ea367fa48160a711662837ff6b38a99765e56b95546012aa27f5c8"
+                    width="150px" height="130px">
+                <p>motoboy 6 </p>
+                <p>Mario Gomes</p>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
+                <button id="botaodadiv" type="button" class="loginCadastrar">
+                    <a href="perfilusuario6.html">
+                        <p>Ver mais</p>
+                    </a>
+                </button>
+            </div>
+            
+            </main>
+            <footer class="rodape">Copyright © 2023 Entrega certa | Todos os direitos reservados.</footer>
+            
+            </body>
+            
+            </html>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

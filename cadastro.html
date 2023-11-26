@@ -1,0 +1,83 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+
+
+      <body>
+        <header class="cabecalho">
+          <nav class="cabecalho__menu" >
+              <a class="logo" href="/home.html"><img src="/img/logoAmarelo.jpg" alt="logo" style="width: 100px;"></a>
+          </nav>
+          <div id="divBusca">
+              <input type="text" id="txtBusca" placeholder="Buscar..."/>
+              <img src="/img/search.png" id="btnBusca" alt="Buscar" style="width: 30px;"/>
+            </div>
+            <a class="loginCadastrar" href="login.html">LOGIN</a>
+       </header>
+          
+      <main class="conteudo">
+        <h2 class="titulo1">Cadastro</h2>   
+    
+        <form>
+              <fieldset>
+                
+                <form>
+                    <fieldset>
+                    <h3 class="titulo2">
+                    <input type="radio" class="seletor" name="tipo" id="selMotoboy" value="1">Motoboy  <br><p></p>
+                    <input type="radio" class="seletor" name="tipo" id="selEmpregador" value="0">Empresa
+                    <p*4></p>e-mail <p><input name="e-mail" id="e-mail-cadastro" placeholder="contato@email.com"><br>
+                    <p></p>nome completo <p><input name="Nome Completo" id="nomecompleto" value=""><br>
+                    <p></p>como quer ser chamado<p><input name="como quer ser chamado" id="apelido" value=""><br>
+                    <p></p>CPF / CNPJ <p><input name="CPF / CNPJ" placeholder="somente números"><br>
+                    <p></p>data de nascimento <p><input name="datanasc" placeholder="somente números"><br>
+                        <p>Rua
+                    <input name="Rua">
+                    nº
+                    <input name="Número" class="numero">
+                    Bairro
+                    <input name="Bairro" class="bairro">
+                    <p>Estado
+                    <input name="Estado" class="uf" placeholder="UF">
+                    Cidade
+                    <input name="Cidade" class="cidade" value="">
+                    <p></p> sua senha<p>
+                    <input name="senha" type="password" id="senha-cadastro" placeholder="somente números">
+                    <p></p>confirme senha<p>
+                    <input name="senha" type="password" id="confere-senha-cadastro" placeholder="digite a senha novamente">
+                </h3>
+            
+
+
+                <button id="btnCadastro" type="button" class="btn btn-dark">
+                  Cadastrar</button>
+                  <!--<a class="login" href="home.html">CADASTRAR</a>
+                  -->
+<p></p>
+                
+              </fieldset>
+         
+         
+            </form>
+         
+  <p></p>
+   
+  
+  </main>  
+  <footer class="rodape">Copyright © 2023 Entrega certa | Todos os direitos reservados.</footer>
+      </body>
+      <script src="script_cad.js">
+      </script>
+  </html>
+   
+    
